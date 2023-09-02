@@ -1,6 +1,6 @@
 const Search: React.FC = () => {
     return (
-        <div></div>
+        <div className="h-[1080px]"></div>
     )
 }
 
