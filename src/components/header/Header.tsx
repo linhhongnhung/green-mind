@@ -1,5 +1,6 @@
 import TabItem from "./TabItem"
 import TabIcon from "./TabIcon"
+import Link from "next/link"
 
 const tabList = [
     {
@@ -41,8 +42,10 @@ const Header: React.FC = () => {
                         bg-white text-gray
                         px-24 py-[44px] mx-auto
                         flex
-                        sticky top-0">
-            <img className="mr-24" src="./img/GREENMIND.svg" alt="GREENMIND logo" />
+                        sticky top-0 z-[1]">
+            <Link href="/" className="mr-24">
+                <img src="./img/GREENMIND.svg" alt="GREENMIND logo" />
+            </Link>
             <div className="flex justify-between w-[1010px]">
                 <div className="flex">
                     {

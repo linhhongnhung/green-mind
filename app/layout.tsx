@@ -7,7 +7,7 @@ const poppins = Poppins({
   subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'GREEDMIND',
+  title: 'GREENMIND',
   description: 'Dev @LinhHongNhung',
 }
 
