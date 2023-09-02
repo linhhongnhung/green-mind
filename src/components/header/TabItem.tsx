@@ -9,7 +9,7 @@ interface TabItemProps {
 const TabItem: React.FC<TabItemProps> = (props) => {
     const { tabName, tabLink } = props
     return (
-        <Link href={tabLink} className="mr-12">{tabName}</Link>
+        <Link href={tabLink} className="mr-12 hover:text-black">{tabName}</Link>
     )
 }
 

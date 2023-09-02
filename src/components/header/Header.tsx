@@ -38,7 +38,7 @@ const tabIconList = [
 const Header: React.FC = () => {
     return (
         <div className="max-h-[126px] max-w-[1440px]
-                        bg-white text-black
+                        bg-white text-gray
                         px-24 py-[44px] mx-auto
                         flex
                         sticky top-0">
