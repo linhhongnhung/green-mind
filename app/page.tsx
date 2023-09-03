@@ -1,5 +1,5 @@
 import React from 'react'
-import { Header, Search, BestSelling, AboutUs, Feedback, Footer } from '@/src/components'
+import { Header, Search, BestSelling, AboutUs, Categories, Feedback, Footer } from '@/src/components'
 
 export default function Home() {
   return (
@@ -9,6 +9,7 @@ export default function Home() {
         <Search/>
         <BestSelling/>
         <AboutUs/>
+        <Categories/>
         <Feedback/>
       </main>
       <Footer/>

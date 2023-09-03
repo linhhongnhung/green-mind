@@ -21,7 +21,7 @@ const AboutUs: React.FC = () => {
     )
 }
 
-export default AboutUs
+export default AboutUs;
 
 const services = [
     {
