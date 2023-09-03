@@ -13,7 +13,7 @@ const BestSelling: React.FC = () => {
     // }
 
     return (
-        <section className="pt-[93px] max-w-[1440px] mx-auto">
+        <section className="pt-[93px] pb-[113px] max-w-[1440px] mx-auto">
             <div className="mx-24 flex">
                 <div>
                     <h2 className="text-black text-base font-bold

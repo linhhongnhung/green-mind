@@ -14,7 +14,7 @@ const PlantItem: React.FC<PlantItemProps> = (props) => {
             href={href}
             className="flex flex-col
                        p-6 rounded-[16px] 
-                       hover:brightness-90 hover:bg-white transition duration-200">
+                       hover:brightness-[0.92] hover:bg-white transition duration-200">
             <img className="max-w-[299.33px] max-h-[363px]" src={img} alt="plant" />
             <h3 className="mt-3 mb-[7px]">{name}</h3>
             <span className="text-gray">₱ {price}</span>
