@@ -7,7 +7,7 @@ interface ServiceProps {
 const Service: React.FC<ServiceProps> = (props) => {
     const { icon, title, desc } = props;
     return (
-        <div>
+        <div className="hover:scale-110 transition duration-300">
             <div className="w-24 h-24 mx-auto bg-primary rounded-full flex">
                 <img className="m-auto" src={icon} alt="icon"/>
             </div>
