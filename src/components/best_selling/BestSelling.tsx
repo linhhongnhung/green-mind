@@ -25,10 +25,10 @@ const BestSelling: React.FC = () => {
                     </p>
                     <Link href="/">
                         <button className="w-[168px] h-[50px] rounded-[8px]
-                                        bg-primary
-                                        pr-6
-                                        relative
-                                        hover:brightness-[0.6] transition delay-100 duration-300">
+                                           bg-primary text-tiny
+                                           pr-6
+                                           relative
+                                           hover:brightness-[0.6] transition delay-100 duration-300">
                             See more
                             <img className="absolute top-0 ml-[121.5px] mt-[19.87px]" src="./icon/Next.svg"/>
                         </button>
