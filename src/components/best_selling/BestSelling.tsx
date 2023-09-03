@@ -1,7 +1,7 @@
-import React from "react";
-// import Slider from "react-slick";
-import PlantItem from "./PlantItem";
-import Link from "next/link";
+import React from "react"
+// import Slider from "react-slick"
+import PlantItem from "./PlantItem"
+import Link from "next/link"
 
 const BestSelling: React.FC = () => {
 

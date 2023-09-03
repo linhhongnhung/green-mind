@@ -1,18 +1,18 @@
-import React from "react";
-import Statistics from "./Statistics";
+import React from "react"
+import Statistics from "./Statistics"
 
 const statisticList = [
     {
         amount: "50",
-        type: "Plant Species",
+        type: "Plant Species"
     },
     {
         amount: "100",
-        type: "Customers",
+        type: "Customers"
     }
 ]
 
-const statisticListLength = statisticList.length;
+const statisticListLength = statisticList.length
 
 const Search: React.FC = () => {
     return (

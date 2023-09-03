@@ -1,14 +1,14 @@
-import Link from "next/link";
+import Link from "next/link"
 
 interface PlantItemProps {
-    img: string;
-    name: string;
-    price: string;
-    href: string;
+    img: string
+    name: string
+    price: string
+    href: string
 }
 
 const PlantItem: React.FC<PlantItemProps> = (props) => {
-    const { img, name, price, href } = props;
+    const { img, name, price, href } = props
     return (
         <Link
             href={href}
@@ -22,4 +22,4 @@ const PlantItem: React.FC<PlantItemProps> = (props) => {
     )
 }
 
-export default PlantItem;
+export default PlantItem

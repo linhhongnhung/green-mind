@@ -1,8 +1,8 @@
-import React from 'react';
+import React from 'react'
 
 interface StatisticsProps {
-    amount: string;
-    type: string;
+    amount: string
+    type: string
 }
 
 const Statistics: React.FC<StatisticsProps> = (props) => {
@@ -15,4 +15,4 @@ const Statistics: React.FC<StatisticsProps> = (props) => {
     )
 }
 
-export default Statistics;
+export default Statistics

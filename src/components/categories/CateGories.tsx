@@ -1,4 +1,4 @@
-import CategoryItem from "./CategoryItem";
+import CategoryItem from "./CategoryItem"
 
 const Categories: React.FC = () => {
     return (
@@ -26,7 +26,7 @@ const Categories: React.FC = () => {
     )
 }
 
-export default Categories;
+export default Categories
 
 const categories = [
     {

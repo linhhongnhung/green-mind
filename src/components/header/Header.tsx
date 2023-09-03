@@ -14,7 +14,7 @@ const tabList = [
     {
         tabName: "Contacts",
         tabLink: "/"
-    },
+    }
 ]
 
 const tabIconList = [
@@ -33,7 +33,7 @@ const tabIconList = [
     {
         iconSrc: "./icon/FilterRight.svg",
         href: "/"
-    },
+    }
 ]
 
 const Header: React.FC = () => {

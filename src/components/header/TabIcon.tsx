@@ -1,9 +1,9 @@
-import React from 'react';
-import Link from 'next/link';
+import React from 'react'
+import Link from 'next/link'
 
 interface TabIconProps {
-    iconSrc: string;
-    href: string;
+    iconSrc: string
+    href: string
 }
 
 const TabIcon: React.FC<TabIconProps> = (props) => {
@@ -19,4 +19,4 @@ const TabIcon: React.FC<TabIconProps> = (props) => {
     )
 }
 
-export default TabIcon;
+export default TabIcon

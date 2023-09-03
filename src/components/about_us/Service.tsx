@@ -1,11 +1,11 @@
 interface ServiceProps {
-    icon: string;
-    title: string;
-    desc: string;
+    icon: string
+    title: string
+    desc: string
 }
 
 const Service: React.FC<ServiceProps> = (props) => {
-    const { icon, title, desc } = props;
+    const { icon, title, desc } = props
     return (
         <div className="hover:scale-110 transition duration-300">
             <div className="w-24 h-24 mx-auto bg-primary rounded-full flex">
@@ -17,4 +17,4 @@ const Service: React.FC<ServiceProps> = (props) => {
     )
 }
 
-export default Service;
+export default Service
