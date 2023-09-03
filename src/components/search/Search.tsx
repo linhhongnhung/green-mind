@@ -53,7 +53,7 @@ const Search: React.FC = () => {
                     <button className="w-12 h-12 bg-primary rounded-[12px]
                                     absolute
                                     ml-[393px] mt-2
-                                    hover:opacity-80">
+                                    hover:brightness-[0.6] transition delay-100 duration-200">
                         <img className="m-auto" src="./icon/Search.svg" alt="search button" />
                     </button>
                     <input className="w-[449px] h-16 rounded-[12px]
