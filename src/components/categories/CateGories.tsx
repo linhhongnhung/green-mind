@@ -7,10 +7,11 @@ const Categories: React.FC = () => {
                 <div className="grid grid-cols-3 gap-24
                                 absolute
                                 mt-[135px] mx-24
-                                max-w-[1280px]">
+                                max-w-[1248px]">
                     {
-                        categories.map((category) => {
+                        categories.map((category, index) => {
                             return <CategoryItem
+                                key={index}
                                 img={category.img}
                                 name={category.name}
                                 desc={category.desc}
@@ -20,7 +21,7 @@ const Categories: React.FC = () => {
                 </div>
             </div>
             <h2 className="text-base font-bold">Categories</h2>
-            <p className="mt-3 mb-24 text-gray">Find what you are looking for</p>
+            <p className="mt-3 mb-24 text-gray text-tiny">Find what you are looking for</p>
             <div className="bg-primary min-h-[841px]" />
         </section>
     )

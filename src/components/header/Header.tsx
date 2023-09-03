@@ -52,9 +52,10 @@ const Header: React.FC = () => {
                 <div className="flex justify-between w-[1010px]">
                     <div className="flex">
                         {
-                            tabList.map((tab) => {
+                            tabList.map((tab, index) => {
                                 return (
                                     <TabItem
+                                        key={index}
                                         tabName={tab.tabName}
                                         tabLink={tab.tabLink}
                                     />
@@ -64,9 +65,10 @@ const Header: React.FC = () => {
                     </div>
                     <div className="flex">
                         {
-                            tabIconList.map((tab) => {
+                            tabIconList.map((tab, index) => {
                                 return (
                                     <TabIcon
+                                        key={index}
                                         iconSrc={tab.iconSrc}
                                         href={tab.href}
                                     />

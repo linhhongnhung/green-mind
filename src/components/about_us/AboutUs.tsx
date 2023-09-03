@@ -5,11 +5,12 @@ const AboutUs: React.FC = () => {
         <section className="pb-[165px] max-w-[1440px] mx-auto">
             <div className="mx-24 text-center">
                 <h2 className="text-base font-bold">About us</h2>
-                <p className="mt-3 mb-12 text-gray">Order now and appreciate the beauty of nature</p>
+                <p className="mt-3 mb-12 text-gray text-tiny">Order now and appreciate the beauty of nature</p>
                 <div className="grid grid-cols-3 gap-6">
                     {
-                        services.map((service) => {
+                        services.map((service, index) => {
                             return <Service
+                                key={index}
                                 icon={service.icon}
                                 title={service.title}
                                 desc={service.desc} />

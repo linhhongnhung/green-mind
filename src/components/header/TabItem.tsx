@@ -11,6 +11,7 @@ const TabItem: React.FC<TabItemProps> = (props) => {
     return (
         <Link href={tabLink}
             className="mr-12
+                       text-tiny
                        hover:text-black
                        transition delay-100 duration-100">
             {tabName}

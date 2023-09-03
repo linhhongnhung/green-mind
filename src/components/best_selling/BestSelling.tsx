@@ -16,16 +16,17 @@ const BestSelling: React.FC = () => {
         <section className="pt-[93px] pb-[113px] max-w-[1440px] mx-auto">
             <div className="mx-24 flex">
                 <div>
-                    <h2 className="text-black text-base font-bold
+                    <h2 className="text-base font-bold
                                     max-w-[256px]">
                         Best Selling Plants
                     </h2>
-                    <p className="text-gray max-w-[174px] mt-3 mb-6">
+                    <p className="text-tiny text-gray max-w-[196px] mt-3 mb-6">
                         Easiest way to healthy life by buying your favorite plants
                     </p>
                     <Link href="/">
                         <button className="w-[168px] h-[50px] rounded-[8px]
-                                           bg-primary text-tiny
+                                           bg-primary
+                                           text-tiny
                                            pr-6
                                            relative
                                            hover:brightness-[0.6] transition delay-100 duration-300">
@@ -36,8 +37,9 @@ const BestSelling: React.FC = () => {
                 </div>
                 <div className="grid grid-cols-3">
                 {
-                    plantList.map( (plant) => {
+                    plantList.map( (plant, index) => {
                         return <PlantItem
+                                    key={index}
                                     img={plant.img}
                                     name={plant.name}
                                     price={plant.price}

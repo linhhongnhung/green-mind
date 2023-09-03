@@ -10,7 +10,7 @@ const Statistics: React.FC<StatisticsProps> = (props) => {
     return (
         <div className="mr-12">
             <p className="text-base">{amount}+</p>
-            <p>{type}</p>
+            <p className="text-tiny">{type}</p>
         </div>
     )
 }

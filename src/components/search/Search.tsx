@@ -17,8 +17,7 @@ const statisticListLength = statisticList.length
 const Search: React.FC = () => {
     return (
         <section className="max-w-[1440px]
-                            mx-auto
-                            text-black">
+                            mx-auto">
             <div className="min-h-[512px] rounded-[24px]
                             mx-24 pl-12
                             bg-primary
@@ -35,6 +34,7 @@ const Search: React.FC = () => {
                                     return (
                                         <React.Fragment>
                                             <Statistics
+                                                key={index}
                                                 amount={item.amount}
                                                 type={item.type}
                                             />
@@ -43,6 +43,7 @@ const Search: React.FC = () => {
                                     )
                                 } else {
                                     return <Statistics
+                                        key={index}
                                         amount={item.amount}
                                         type={item.type}
                                     />
@@ -58,7 +59,7 @@ const Search: React.FC = () => {
                     </button>
                     <input className="w-[449px] h-16 rounded-[12px]
                                    pl-[18px] pr-16
-                                   text-black
+                                   text-tiny
                                    focus:ring-2 focus:ring-black focus:outline-none"
                         placeholder="What are you looking for?" />
                 </div>

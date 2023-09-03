@@ -26,19 +26,18 @@ const CategoryItem: React.FC<CategoryItemProps> = (props) => {
             href={href}
             className="flex flex-col
                        rounded-[16px] 
-                       transition duration-200
                        hover:translate-y-[96px] transition duration-500"
             onMouseEnter={handleHover}
             onMouseLeave={handleNoHover}>
             <div>
                 <img className="max-w-[352px]" src={img} alt="plants" />
-                <h3 className="font-bold my-3">{name}</h3>
+                <h3 className="font-bold text-tiny my-3">{name}</h3>
             </div>
             <div className={
                 isHoverd
                     ? "opacity-1 transition duration-1000"
                     : "opacity-0 transition duration-500"}>
-                <p className="text-gray max-w-[300px] mx-auto mb-6">{desc}</p>
+                <p className="text-gray text-tiny mb-6">{desc}</p>
                 <button className="w-[147px] h-[51px]
                                    rounded-[8px] bg-white
                                    pr-[21px] mx-auto

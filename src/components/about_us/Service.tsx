@@ -11,8 +11,8 @@ const Service: React.FC<ServiceProps> = (props) => {
             <div className="w-24 h-24 mx-auto bg-primary rounded-full flex">
                 <img className="m-auto" src={icon} alt="icon"/>
             </div>
-            <h3 className="mt-6 mb-3 font-bold">{title}</h3>
-            <p className="text-gray max-w-[350px] mx-auto">{desc}</p>
+            <h3 className="mt-6 mb-3 font-bold text-tiny">{title}</h3>
+            <p className="text-gray text-tiny">{desc}</p>
         </div>
     )
 }
