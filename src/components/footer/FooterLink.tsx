@@ -3,12 +3,15 @@ import { list } from "postcss"
 
 interface FooterLinkProps {
     title: string
-    items: object[]
+    items: keyable[]
 }
 
 interface ItemProps {
     text: string
     href: string
+}
+interface keyable {
+    [key: string]: any  
 }
 
 const FooterLink: React.FC<FooterLinkProps> = (props) => {
@@ -25,8 +28,6 @@ const FooterLink: React.FC<FooterLinkProps> = (props) => {
     )
 }
 
-export default FooterLink
-
 const Item: React.FC<ItemProps> = (props) => {
     const { text, href } = props
     return <Link href={href} className="text-gray font-[400]
@@ -34,3 +35,5 @@ const Item: React.FC<ItemProps> = (props) => {
         {text}
     </Link>
 }
+
+export default FooterLink
