@@ -1,22 +1,25 @@
 "use client"
 import FeedbackItem from "./FeedbackItem"
 import Slider from "react-slick"
+import Slide from "../animations/Slide"
 
 const Feedback: React.FC = () => {
 
     const settings = {
-        infinite: false,
+        infinite: true,
         speed: 1000,
         slidesToShow: 1.5,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 4000,
     }
 
     return (
         <section className="max-w-[1440px] mx-auto pt-24 pl-24 pb-[230px]">
             <div className="max-w-[1248px] flex justify-between mb-12">
-                <h2 className="max-w-[457px] text-base font-bold">What customers say about GREENMIND?</h2>
+                <Slide index={0} direction="right">
+                    <h2 className="max-w-[457px] text-base font-bold">What customers say about GREENMIND?</h2>
+                </Slide>
                 <img src="./img/Group17.svg" alt="slide" />
             </div>
             <div className="max-w-[1344px] mx-auto">

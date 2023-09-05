@@ -13,7 +13,8 @@ const AboutUs: React.FC = () => {
                                 key={index}
                                 icon={service.icon}
                                 title={service.title}
-                                desc={service.desc} />
+                                desc={service.desc}
+                                index={index} />
                         })
                     }
                 </div>

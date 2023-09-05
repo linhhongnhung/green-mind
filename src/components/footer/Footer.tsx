@@ -6,7 +6,7 @@ const Footer: React.FC = () => {
     return (
         <footer className="bg-primary min-h-[400px]">
             <div className="max-w-[1440px]
-                            px-24 pt-12 mx-auto
+                            px-24 pt-14 mx-auto
                             text-tiny
                             flex justify-between">
 
@@ -26,7 +26,7 @@ const Footer: React.FC = () => {
                             })
                         }
                     </div>
-                    <p className="text-gray mt-24">2023 all Right Reserved Term of use GREENMIND</p>
+                    <p className="text-gray mt-[98px]">2023 all Right Reserved Term of use GREENMIND</p>
                 </div>
 
                 <div className="flex gap-6">

@@ -44,8 +44,8 @@ const BestSelling: React.FC = () => {
                                     name={plant.name}
                                     price={plant.price}
                                     href={plant.href}
+                                    index={index}
                                 />
-
                     })
                 }
                 </div>
