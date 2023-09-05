@@ -5,7 +5,7 @@ import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 
 const poppins = Poppins({ 
-  weight: ['500', '700', '800'],
+  weight: ['400', '500', '700', '800'],
   subsets: ['latin'] })
 
 export const metadata: Metadata = {
