@@ -35,7 +35,6 @@ const Slide: FC<Props> = ({ children, index, direction }) => {
             axis = "y"
             startLocation = 0
     }
-    console.log(typeof(axis))
 
     let slideUpVariants = {
         hidden: { opacity: 0, [axis]: `${startLocation}px` },

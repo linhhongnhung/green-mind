@@ -37,9 +37,8 @@ const Search: React.FC = () => {
                             statisticList.map((item, index) => {
                                 if (index !== statisticListLength - 1) {
                                     return (
-                                        <React.Fragment>
+                                        <React.Fragment key={index}>
                                             <Statistics
-                                                key={index}
                                                 amount={item.amount}
                                                 type={item.type}
                                             />

@@ -31,7 +31,7 @@ const BestSelling: React.FC = () => {
                                            relative
                                            hover:brightness-[0.6] transition delay-100 duration-300">
                             See more
-                            <img className="absolute top-0 ml-[121.5px] mt-[19.87px]" src="./icon/Next.svg"/>
+                            <img className="absolute top-0 ml-[121.5px] mt-[19.87px]" src="./icon/Next.svg" alt="next"/>
                         </button>
                     </Link>
                 </div>
