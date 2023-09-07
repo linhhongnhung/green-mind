@@ -1,26 +1,23 @@
 import React from "react"
-// import Slider from "react-slick"
 import PlantItem from "./PlantItem"
 import Link from "next/link"
 
 const BestSelling: React.FC = () => {
 
-    // const settings = {
-    //     infinite: true,
-    //     speed: 500,
-    //     slidesToShow: 3,
-    //     slidesToScroll: 1
-    // }
-
     return (
         <section className="pt-[93px] pb-[113px] max-w-[1440px] mx-auto">
-            <div className="mx-24 flex">
+            <div className="mx-24 flex
+                            max-lg:flex-col max-lg:items-center max-lg:text-center
+                            max-md:mx-12
+                            max-sm:mx-6">
                 <div>
                     <h2 className="text-base font-bold
-                                    max-w-[256px]">
+                                    w-[256px]
+                                    max-lg:w-auto">
                         Best Selling Plants
                     </h2>
-                    <p className="text-tiny text-gray max-w-[196px] mt-3 mb-6">
+                    <p className="text-tiny text-gray w-[196px] mt-3 mb-6
+                                  max-lg:w-auto">
                         Easiest way to healthy life by buying your favorite plants
                     </p>
                     <Link href="/">
@@ -35,7 +32,9 @@ const BestSelling: React.FC = () => {
                         </button>
                     </Link>
                 </div>
-                <div className="grid grid-cols-3">
+                <div className="grid grid-cols-3
+                                max-lg:grid-cols-2 max-lg:mt-4
+                                max-md:grid-cols-1">
                 {
                     plantList.map( (plant, index) => {
                         return <PlantItem
