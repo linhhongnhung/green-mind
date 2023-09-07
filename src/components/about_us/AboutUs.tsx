@@ -3,10 +3,12 @@ import Service from "./Service"
 const AboutUs: React.FC = () => {
     return (
         <section className="pb-[165px] max-w-[1440px] mx-auto">
-            <div className="mx-24 text-center">
+            <div className="mx-24 text-center
+                            max-sm:mx-6">
                 <h2 className="text-base font-bold">About us</h2>
                 <p className="mt-3 mb-12 text-gray text-tiny">Order now and appreciate the beauty of nature</p>
-                <div className="grid grid-cols-3 gap-6">
+                <div className="grid grid-cols-3 gap-6
+                                max-md:grid-cols-1 max-md:gap-12">
                     {
                         services.map((service, index) => {
                             return <Service
