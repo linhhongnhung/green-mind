@@ -15,7 +15,7 @@ const FeedbackItem: React.FC<FeedbackItemProps> = (props) => {
                 {comment}
             </p>
             <div className="grid grid-cols-[163px_1fr_20px_89px]">
-                <img className="ml-[13px] max-sm:row-span-3" src={img} alt="Customer" />
+                <img className="ml-[13px]" src={img} alt="Customer" />
                 <div className="pl-[7px] max-md:pl-0">
                     <h4 className="font-bold text-tiny mt-[54px]">{name}</h4>
                     <span className="text-[0.75rem] text-gray">{profession}</span>
