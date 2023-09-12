@@ -4,11 +4,14 @@ import FooterLink from "./FooterLink"
 
 const Footer: React.FC = () => {
     return (
-        <footer className="bg-primary min-h-[400px]">
+        <footer className="bg-primary">
             <div className="max-w-[1440px]
                             px-24 pt-14 mx-auto
                             text-tiny
-                            flex justify-between">
+                            flex justify-between
+                            max-lg:px-12
+                            max-md:flex-col
+                            max-sm:px-6">
 
                 <div className="flex flex-col">
                     <Link href="/">
@@ -26,10 +29,11 @@ const Footer: React.FC = () => {
                             })
                         }
                     </div>
-                    <p className="text-gray mt-[98px]">2023 all Right Reserved Term of use GREENMIND</p>
                 </div>
 
-                <div className="flex gap-6">
+                <div className="flex gap-6
+                                max-md:mt-12
+                                max-sm:flex-col">
                     {
                         footerLinks.map((footerLinkItem, index) => {
                             return <FooterLink key={index}
@@ -40,6 +44,11 @@ const Footer: React.FC = () => {
                     }
                 </div>
             </div>
+            <p className="max-w-[1440px] mt-[98px] pb-12 mx-auto px-24 text-gray text-tiny
+                          max-lg:px-12
+                          max-sm:px-6">
+                2023 all Right Reserved Term of use GREENMIND
+            </p>
         </footer>
     )
 }
