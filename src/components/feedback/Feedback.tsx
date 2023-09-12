@@ -12,10 +12,26 @@ const Feedback: React.FC = () => {
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 4000,
+        responsive: [
+            {
+                breakpoint: 1280,
+                settings: {
+                    slidesToShow: 1,
+                },
+            },
+            // {
+            //     breakpoint: 1024,
+            //     settings: {
+            //         slidesToShow: 1,
+            //         className: "mb-10 w-[30rem] mx-auto"
+            //     },
+            // },
+        ]
     }
 
     return (
-        <section className="max-w-[1440px] mx-auto pt-24 pl-24 pb-[230px]">
+        <section className="max-w-[1440px] mx-auto pt-24 pl-24 pb-[230px]
+                            max-xl:px-12">
             <div className="max-w-[1248px] flex justify-between mb-12">
                 <Slide index={0} direction="right">
                     <h2 className="max-w-[457px] text-base font-bold">What customers say about GREENMIND?</h2>
